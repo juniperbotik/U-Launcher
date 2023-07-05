@@ -30,7 +30,7 @@ h2 {
   font-size: 48px;
   color: #FFFFFF;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
+  text-align: left; /* Aligns the text to the left */
   position: relative;
   top: 60%;
   left: 20px;
