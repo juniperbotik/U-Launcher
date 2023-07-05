@@ -28,23 +28,5 @@
     <h2 class="launcher-text">U-Launcher</h2>
     <a href="#" class="button">Загрузить</a>
   </ul>
-    <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      var welcomeText = document.querySelector('.welcome-text');
-      var launcherText = document.querySelector('.launcher-text');
-
-      // Генерация случайных координат для текстов
-      var welcomeTop = Math.floor(Math.random() * window.innerHeight);
-      var welcomeLeft = Math.floor(Math.random() * window.innerWidth);
-      var launcherTop = Math.floor(Math.random() * window.innerHeight);
-      var launcherLeft = Math.floor(Math.random() * window.innerWidth);
-
-      // Применение случайных координат к текстам
-      welcomeText.style.top = welcomeTop + 'px';
-      welcomeText.style.left = welcomeLeft + 'px';
-      launcherText.style.top = launcherTop + 'px';
-      launcherText.style.left = launcherLeft + 'px';
-    });
-  </script>
 </body>
 </html>
