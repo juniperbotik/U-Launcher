@@ -13,7 +13,7 @@ body {
 
 h1 {
   font-size: 48px;
-  color: blue;
+  color: linear-gradient(to left, #84bcd2 #725ce0);
   font-family: "CustomFont", "ErmilovFont", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
