@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "ErmilovFont";
-  src: url("fonts/Ermilov-bold.otf") format("truetype");
-}
 body {
   display: flex;
   align-items: stretch;
