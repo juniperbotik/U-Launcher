@@ -19,21 +19,24 @@ h1 {
   font-family: "ErmilovFont", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 .welcome-text {
-      font-size: 48px;
-      color: #FFFFFF;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      padding-top: 200px;
+     font-size: 48px;
+     color: #FFFFFF;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
 }
 .launcher-text {
-      font-size: 48px;
-      color: #FFFFFF;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
+     font-size: 48px;
+     color: #FFFFFF;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     text-align: center;
+     position: absolute;
+     top: 60%;
+     left: 50%;
+     transform: translate(-50%, -50%);
 }
 .button {
       display: inline-block;
