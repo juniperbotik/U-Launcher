@@ -59,3 +59,7 @@ h2 {
   background-color: #1E90FF;
   color: #FFFFFF;
 }
+ul {
+padding: 0; 
+margin-left: 20px;
+}
