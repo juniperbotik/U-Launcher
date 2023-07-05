@@ -3,7 +3,7 @@
   src: url("fonts/Ermilov-bold.otf") format("truetype");
 }
 body {
-  background: linear-gradient(to right, #330d69, #2bacaf);
+  background: white;
   height: 100vh;
   display: flex;
   align-items: center;
