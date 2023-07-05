@@ -18,6 +18,7 @@ h1 {
   color: linear-gradient(to right, #725ce0 #84bcd2);
   font-family: "ErmilovFont", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 .welcome-text {
      font-size: 48px;
      color: #FFFFFF;
