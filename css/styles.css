@@ -2,3 +2,17 @@
 	font-family: 'Ermilov'; 
 	src: url(/Ermilov-bold.otf); 
 }
+body {
+      background: linear-gradient(to right, gray, white);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+h1 {
+      font-size: 48px;
+      color: gray;
+      font: Ermilov;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
