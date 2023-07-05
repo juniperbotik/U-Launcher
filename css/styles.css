@@ -1,7 +1,3 @@
-@font-face {
-	font-family: 'Ermilov'; 
-	src: url(/Ermilov-bold.otf); 
-}
 body {
       background: linear-gradient(to right, gray, white);
       height: 100vh;
@@ -13,6 +9,7 @@ body {
 h1 {
       font-size: 48px;
       color: gray;
-      font: url(/Ermilov-bold.otf); 
+      font-family: 'Ermilov'; 
+      src: url(/Ermilov-bold.otf); 
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
