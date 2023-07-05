@@ -21,10 +21,52 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
+  <style>
+    body {
+      background-image: url("images/background.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .welcome-text {
+      font-size: 48px;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .launcher-text {
+      font-size: 48px;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-align: center;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: 2px solid #1E90FF;
+      color: #1E90FF;
+      font-size: 24px;
+      text-decoration: none;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .button:hover {
+      background-color: #1E90FF;
+      color: #FFFFFF;
+    }
+  </style>
 </head>
 <body>
   <h1 class="welcome-text">Добро пожаловать</h1>
-  <h2 class="launcher-text">U-Launcher</h2>
-  <a href="#" class="button">Загрузить</a>
+  <h1 class="launcher-text">U-Launcher</h1>
+  <a href="#" class="button">Загрузить!</a>
 </body>
 </html>
