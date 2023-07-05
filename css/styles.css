@@ -5,7 +5,6 @@
 body {
   display: flex;
   align-items: stretch;
-  justify-content: start;
   background-image: url("images/background1.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,14 +12,12 @@ body {
 }
 h1 {
   font-size: 48px;
-  color: linear-gradient(to right, #725ce0 #84bcd2);
-  font-family: "ErmilovFont", sans-serif;
+  color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 h2 {
   font-size: 48px;
-  color: linear-gradient(to right, #725ce0 #84bcd2);
-  font-family: "ErmilovFont", sans-serif;
+  color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .welcome-text {
