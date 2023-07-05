@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("fonts/test.ttf") format("truetype");
+}
+
 body {
       background: linear-gradient(to right, gray, white);
       height: 100vh;
@@ -7,9 +12,8 @@ body {
 }
 
 h1 {
-      font-size: 48px;
-      color: gray;
-      font-family: "ErmilovFont";
-      src: url("font/Ermilov-bold.otf") format("truetype");
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 48px;
+  color: gray;
+  font-family: "CustomFont", "ErmilovFont", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
