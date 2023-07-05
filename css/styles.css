@@ -3,8 +3,6 @@
   src: url("fonts/Ermilov-bold.otf") format("truetype");
 }
 body {
-  background: black;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
