@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "ErmilovFont";
+  src: url("font/Ermilov-bold.otf") format("truetype");
+}
 body {
       background: linear-gradient(to right, gray, white);
       height: 100vh;
