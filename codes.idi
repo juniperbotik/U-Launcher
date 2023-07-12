@@ -14,11 +14,11 @@ public class CommandManager {
 		try {
 
 			if(cmd.contains(".help")) {
-				showMessage("§7====§9Pressive§cWare§7====");
-				showMessage("§f.motionY <§7power§f> - §7DOWN/UP");
-				showMessage("§f.motionX <§7power§f> - §7RIGHT/LEFT");
-				showMessage("§f.tp <§7py x z§f> - §7tp you to coords");
-				showMessage("§f.say <§7message§f> - §7send messege");
+				showMessage("====PressiveWare====");
+				showMessage(".motionY <power> - DOWN/UP");
+				showMessage(".motionX <power> - RIGHT/LEFT");
+				showMessage(".tp <py x y z> - tp you to coords");
+				showMessage(".say <message> - send messege");
 
 			}
 			if(cmd.contains(".motionY ")) {
@@ -27,19 +27,19 @@ public class CommandManager {
 				showMessage("You up s power = " + y);
 			}
 			if(cmd.contains(".motionX ")) {
-				double x = Double.parseDouble(cmd.split(".motionX ")[1]);
-				mc.player.motionX = x;
+				double y = Double.parseDouble(cmd.split(".motionX ")[1]);
+				mc.player.motionX = y;
 				showMessage("You down s power = " + y);
 			}
 			if (cmd.contains(".tp ")) {
-			String[] coordinates = cmd.split(".tp ")[1].split(" ");
-			if (coordinates.length == 3) {
-				double x = Double.parseDouble(coordinates[0]);
-				double y = Double.parseDouble(coordinates[1]);
-				double z = Double.parseDouble(coordinates[2]);
-				mc.player.setPosition(x, y, z);
-				showMessage("You tp to: " + x + ", " + y + ", " + z);
-			    }
+				String[] coordinates = cmd.split(".tp ")[1].split(" ");
+				if (coordinates.length == 3) {
+					double x = Double.parseDouble(coordinates[0]);
+					double y = Double.parseDouble(coordinates[1]);
+					double z = Double.parseDouble(coordinates[2]);
+					mc.player.setPosition(x, y, z);
+					showMessage("You tp to: " + x + ", " + y + ", " + z);
+				}
 			}
 			if(cmd.contains(".say ")) {
 				String msg = cmd.split(".say ")[1];
