@@ -1,1 +1,57 @@
-123
+package tech.bulo4ka.pware;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.text.TextComponentString;
+
+public class CommandManager {
+
+	public static String prefix = "[PressiveWare] ";
+
+	public void onCommand(String cmd) {
+		Minecraft mc = Minecraft.getMinecraft();
+		try {
+
+			if(cmd.contains(".help")) {
+				showMessage("§7====§9Pressive§cWare§7====");
+				showMessage("§f.motionY <§7power§f> - §7DOWN/UP");
+				showMessage("§f.say <§7message§f> - §7send messege");
+
+			}
+			if(cmd.contains(".motionY ")) {
+				double y = Double.parseDouble(cmd.split(".motionY ")[1]);
+				mc.player.motionY += y;
+				showMessage("You up s power = " + y);
+			}
+			if(cmd.contains(".motionX ")) {
+				double y = Double.parseDouble(cmd.split(".motionX ")[1]);
+				mc.player.motionX = y;
+				showMessage("You down s power = " + y);
+			}
+			if(cmd.contains(".say ")) {
+				String msg = cmd.split(".say ")[1];
+				mc.player.sendChatMessage(msg);
+			}
+
+
+		} catch (Exception eg) {
+			eg.printStackTrace();
+			showMessage(eg.getMessage());
+		}
+	}
+
+	public static void showMessageWithPrefix(String text) {
+		Minecraft mc = Minecraft.getMinecraft();
+		mc.ingameGUI.getChatGUI().printChatMessage(new TextComponentString(prefix + text));
+	}
+
+	public static void showMessage(String text) {
+		Minecraft mc = Minecraft.getMinecraft();
+		mc.ingameGUI.getChatGUI().printChatMessage(new TextComponentString(text));
+	}
+
+
+
+
+
+
+}
